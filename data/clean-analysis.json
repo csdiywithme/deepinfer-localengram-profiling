@@ -1,0 +1,1546 @@
+{
+  "complete_and_matched": true,
+  "cases": {
+    "profile-8192-1": {
+      "variants": {
+        "base": {
+          "status": "matched",
+          "valid_ranks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank_errors": {},
+          "timings": {
+            "engine_call": {
+              "samples": 32,
+              "p50_us": 9299.327000000001,
+              "p95_us": 9464.268
+            },
+            "step_start_interval": {
+              "samples": 31,
+              "p50_us": 9319.979,
+              "p95_us": 9486.185
+            }
+          },
+          "paired_parity": {
+            "compared_ranks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mismatches": {}
+          },
+          "workload": {
+            "source_rev": "0a9059c516f9b458f2b271d207a49ac80388763e",
+            "model_rev": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+            "model_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+            "prefill_chunk": 4096,
+            "output_tokens": 256,
+            "warmup_steps": 12,
+            "clean_steps": 32,
+            "ep": 4,
+            "dp": 4,
+            "cp": 1,
+            "nextn": 3,
+            "gpu_memory_utilization": 0.9,
+            "context": 8192,
+            "requests_per_rank": 1,
+            "variant": "base",
+            "max_model_len": 135168,
+            "engine_max_num_seqs": 8
+          },
+          "runtime": {
+            "gpu": "NVIDIA B300 SXM6 AC",
+            "torch": "2.13.0+cu132",
+            "cuda": "13.2",
+            "nccl": [
+              2,
+              29,
+              7
+            ],
+            "cache_block_size": 128,
+            "graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              24,
+              32
+            ],
+            "draft_graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "engram_shard_bytes": 50689537536
+          }
+        },
+        "fused": {
+          "status": "matched",
+          "valid_ranks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank_errors": {},
+          "timings": {
+            "engine_call": {
+              "samples": 32,
+              "p50_us": 9105.0825,
+              "p95_us": 9278.946
+            },
+            "step_start_interval": {
+              "samples": 31,
+              "p50_us": 9105.746,
+              "p95_us": 9309.519
+            }
+          },
+          "paired_parity": {
+            "compared_ranks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mismatches": {}
+          },
+          "workload": {
+            "source_rev": "0a9059c516f9b458f2b271d207a49ac80388763e",
+            "model_rev": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+            "model_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+            "prefill_chunk": 4096,
+            "output_tokens": 256,
+            "warmup_steps": 12,
+            "clean_steps": 32,
+            "ep": 4,
+            "dp": 4,
+            "cp": 1,
+            "nextn": 3,
+            "gpu_memory_utilization": 0.9,
+            "context": 8192,
+            "requests_per_rank": 1,
+            "variant": "fused",
+            "max_model_len": 135168,
+            "engine_max_num_seqs": 8
+          },
+          "runtime": {
+            "gpu": "NVIDIA B300 SXM6 AC",
+            "torch": "2.13.0+cu132",
+            "cuda": "13.2",
+            "nccl": [
+              2,
+              29,
+              7
+            ],
+            "cache_block_size": 128,
+            "graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              24,
+              32
+            ],
+            "draft_graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "engram_shard_bytes": 50689537536
+          }
+        },
+        "prefetch": {
+          "status": "matched",
+          "valid_ranks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank_errors": {},
+          "timings": {
+            "engine_call": {
+              "samples": 32,
+              "p50_us": 9234.5405,
+              "p95_us": 9408.383
+            },
+            "step_start_interval": {
+              "samples": 31,
+              "p50_us": 9258.335,
+              "p95_us": 9432.208
+            }
+          },
+          "paired_parity": {
+            "compared_ranks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mismatches": {}
+          },
+          "workload": {
+            "source_rev": "0a9059c516f9b458f2b271d207a49ac80388763e",
+            "model_rev": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+            "model_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+            "prefill_chunk": 4096,
+            "output_tokens": 256,
+            "warmup_steps": 12,
+            "clean_steps": 32,
+            "ep": 4,
+            "dp": 4,
+            "cp": 1,
+            "nextn": 3,
+            "gpu_memory_utilization": 0.9,
+            "context": 8192,
+            "requests_per_rank": 1,
+            "variant": "prefetch",
+            "max_model_len": 135168,
+            "engine_max_num_seqs": 8
+          },
+          "runtime": {
+            "gpu": "NVIDIA B300 SXM6 AC",
+            "torch": "2.13.0+cu132",
+            "cuda": "13.2",
+            "nccl": [
+              2,
+              29,
+              7
+            ],
+            "cache_block_size": 128,
+            "graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              24,
+              32
+            ],
+            "draft_graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "engram_shard_bytes": 50689537536
+          }
+        },
+        "fused_prefetch": {
+          "status": "matched",
+          "valid_ranks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank_errors": {},
+          "timings": {
+            "engine_call": {
+              "samples": 32,
+              "p50_us": 9109.3035,
+              "p95_us": 9317.521
+            },
+            "step_start_interval": {
+              "samples": 31,
+              "p50_us": 9134.07,
+              "p95_us": 9338.994
+            }
+          },
+          "paired_parity": {
+            "compared_ranks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mismatches": {}
+          },
+          "workload": {
+            "source_rev": "0a9059c516f9b458f2b271d207a49ac80388763e",
+            "model_rev": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+            "model_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+            "prefill_chunk": 4096,
+            "output_tokens": 256,
+            "warmup_steps": 12,
+            "clean_steps": 32,
+            "ep": 4,
+            "dp": 4,
+            "cp": 1,
+            "nextn": 3,
+            "gpu_memory_utilization": 0.9,
+            "context": 8192,
+            "requests_per_rank": 1,
+            "variant": "fused_prefetch",
+            "max_model_len": 135168,
+            "engine_max_num_seqs": 8
+          },
+          "runtime": {
+            "gpu": "NVIDIA B300 SXM6 AC",
+            "torch": "2.13.0+cu132",
+            "cuda": "13.2",
+            "nccl": [
+              2,
+              29,
+              7
+            ],
+            "cache_block_size": 128,
+            "graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              24,
+              32
+            ],
+            "draft_graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "engram_shard_bytes": 50689537536
+          }
+        },
+        "base_repeat": {
+          "status": "matched",
+          "valid_ranks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank_errors": {},
+          "timings": {
+            "engine_call": {
+              "samples": 32,
+              "p50_us": 9262.645,
+              "p95_us": 9411.66
+            },
+            "step_start_interval": {
+              "samples": 31,
+              "p50_us": 9287.764,
+              "p95_us": 9434.622
+            }
+          },
+          "paired_parity": {
+            "compared_ranks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mismatches": {}
+          },
+          "workload": {
+            "source_rev": "0a9059c516f9b458f2b271d207a49ac80388763e",
+            "model_rev": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+            "model_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+            "prefill_chunk": 4096,
+            "output_tokens": 256,
+            "warmup_steps": 12,
+            "clean_steps": 32,
+            "ep": 4,
+            "dp": 4,
+            "cp": 1,
+            "nextn": 3,
+            "gpu_memory_utilization": 0.9,
+            "context": 8192,
+            "requests_per_rank": 1,
+            "variant": "base_repeat",
+            "max_model_len": 135168,
+            "engine_max_num_seqs": 8
+          },
+          "runtime": {
+            "gpu": "NVIDIA B300 SXM6 AC",
+            "torch": "2.13.0+cu132",
+            "cuda": "13.2",
+            "nccl": [
+              2,
+              29,
+              7
+            ],
+            "cache_block_size": 128,
+            "graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              24,
+              32
+            ],
+            "draft_graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "engram_shard_bytes": 50689537536
+          }
+        }
+      },
+      "contrasts": {
+        "fused_vs_base": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 9299.327000000001,
+                "variant_us": 9105.0825,
+                "reduction_us": 194.2445000000007,
+                "reduction_pct": 2.0888016950043875,
+                "speedup": 1.0213336342641597
+              },
+              "p95_us": {
+                "reference_us": 9464.268,
+                "variant_us": 9278.946,
+                "reduction_us": 185.32200000000012,
+                "reduction_pct": 1.9581229102979767,
+                "speedup": 1.0199723115103807
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 9319.979,
+                "variant_us": 9105.746,
+                "reduction_us": 214.23300000000017,
+                "reduction_pct": 2.298642518400526,
+                "speedup": 1.0235272321455047
+              },
+              "p95_us": {
+                "reference_us": 9486.185,
+                "variant_us": 9309.519,
+                "reduction_us": 176.66599999999926,
+                "reduction_pct": 1.8623503547527196,
+                "speedup": 1.0189769202898666
+              }
+            }
+          }
+        },
+        "prefetch_vs_base": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 9299.327000000001,
+                "variant_us": 9234.5405,
+                "reduction_us": 64.78650000000198,
+                "reduction_pct": 0.6966794478783461,
+                "speedup": 1.007015671218292
+              },
+              "p95_us": {
+                "reference_us": 9464.268,
+                "variant_us": 9408.383,
+                "reduction_us": 55.88500000000022,
+                "reduction_pct": 0.5904841240759477,
+                "speedup": 1.0059399154987632
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 9319.979,
+                "variant_us": 9258.335,
+                "reduction_us": 61.64400000000023,
+                "reduction_pct": 0.6614177993319539,
+                "speedup": 1.0066582166231834
+              },
+              "p95_us": {
+                "reference_us": 9486.185,
+                "variant_us": 9432.208,
+                "reduction_us": 53.97699999999895,
+                "reduction_pct": 0.5690064024684207,
+                "speedup": 1.0057226261337746
+              }
+            }
+          }
+        },
+        "fused_prefetch_vs_base": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 9299.327000000001,
+                "variant_us": 9109.3035,
+                "reduction_us": 190.02350000000115,
+                "reduction_pct": 2.0434113135283996,
+                "speedup": 1.0208603764272428
+              },
+              "p95_us": {
+                "reference_us": 9464.268,
+                "variant_us": 9317.521,
+                "reduction_us": 146.7469999999994,
+                "reduction_pct": 1.550537241760265,
+                "speedup": 1.01574957545038
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 9319.979,
+                "variant_us": 9134.07,
+                "reduction_us": 185.90899999999965,
+                "reduction_pct": 1.9947362542340457,
+                "speedup": 1.0203533583605118
+              },
+              "p95_us": {
+                "reference_us": 9486.185,
+                "variant_us": 9338.994,
+                "reduction_us": 147.1909999999989,
+                "reduction_pct": 1.5516353518300445,
+                "speedup": 1.0157609052966516
+              }
+            }
+          }
+        },
+        "fused_prefetch_vs_fused": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 9105.0825,
+                "variant_us": 9109.3035,
+                "reduction_us": -4.220999999999549,
+                "reduction_pct": -0.046358723273507395,
+                "speedup": 0.9995366275808024
+              },
+              "p95_us": {
+                "reference_us": 9278.946,
+                "variant_us": 9317.521,
+                "reduction_us": -38.57500000000073,
+                "reduction_pct": -0.4157260964769137,
+                "speedup": 0.9958599503022316
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 9105.746,
+                "variant_us": 9134.07,
+                "reduction_us": -28.324000000000524,
+                "reduction_pct": -0.3110563373939985,
+                "speedup": 0.9968990822273094
+              },
+              "p95_us": {
+                "reference_us": 9309.519,
+                "variant_us": 9338.994,
+                "reduction_us": -29.475000000000364,
+                "reduction_pct": -0.31661141676600435,
+                "speedup": 0.9968438784734202
+              }
+            }
+          }
+        },
+        "fused_prefetch_vs_prefetch": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 9234.5405,
+                "variant_us": 9109.3035,
+                "reduction_us": 125.23699999999917,
+                "reduction_pct": 1.3561800936386514,
+                "speedup": 1.0137482519931407
+              },
+              "p95_us": {
+                "reference_us": 9408.383,
+                "variant_us": 9317.521,
+                "reduction_us": 90.86199999999917,
+                "reduction_pct": 0.9657557520776862,
+                "speedup": 1.0097517354669765
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 9258.335,
+                "variant_us": 9134.07,
+                "reduction_us": 124.26499999999942,
+                "reduction_pct": 1.342195978002518,
+                "speedup": 1.013604559632234
+              },
+              "p95_us": {
+                "reference_us": 9432.208,
+                "variant_us": 9338.994,
+                "reduction_us": 93.21399999999994,
+                "reduction_pct": 0.9882521674670441,
+                "speedup": 1.0099811607117426
+              }
+            }
+          }
+        },
+        "base_repeat_vs_base": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 9299.327000000001,
+                "variant_us": 9262.645,
+                "reduction_us": 36.6820000000007,
+                "reduction_pct": 0.3944586527605782,
+                "speedup": 1.0039602079103755
+              },
+              "p95_us": {
+                "reference_us": 9464.268,
+                "variant_us": 9411.66,
+                "reduction_us": 52.608000000000175,
+                "reduction_pct": 0.555859153608078,
+                "speedup": 1.0055896621849918
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 9319.979,
+                "variant_us": 9287.764,
+                "reduction_us": 32.215000000000146,
+                "reduction_pct": 0.345655285274786,
+                "speedup": 1.0034685420516714
+              },
+              "p95_us": {
+                "reference_us": 9486.185,
+                "variant_us": 9434.622,
+                "reduction_us": 51.5630000000001,
+                "reduction_pct": 0.5435588700831799,
+                "speedup": 1.005465295800934
+              }
+            }
+          }
+        }
+      },
+      "factorial_effects": {
+        "status": "matched",
+        "timings": {
+          "engine_call": {
+            "p50_us": {
+              "fused_mean_reduction_us": 159.74074999999993,
+              "prefetch_mean_reduction_us": 30.282750000001215,
+              "interaction_reduction_us": -69.00750000000153
+            },
+            "p95_us": {
+              "fused_mean_reduction_us": 138.09199999999964,
+              "prefetch_mean_reduction_us": 8.654999999999745,
+              "interaction_reduction_us": -94.46000000000095
+            }
+          },
+          "step_start_interval": {
+            "p50_us": {
+              "fused_mean_reduction_us": 169.2489999999998,
+              "prefetch_mean_reduction_us": 16.659999999999854,
+              "interaction_reduction_us": -89.96800000000076
+            },
+            "p95_us": {
+              "fused_mean_reduction_us": 134.9399999999996,
+              "prefetch_mean_reduction_us": 12.250999999999294,
+              "interaction_reduction_us": -83.45199999999932
+            }
+          }
+        }
+      }
+    },
+    "profile-8192-8": {
+      "variants": {
+        "base": {
+          "status": "matched",
+          "valid_ranks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank_errors": {},
+          "timings": {
+            "engine_call": {
+              "samples": 32,
+              "p50_us": 10295.568,
+              "p95_us": 10729.003
+            },
+            "step_start_interval": {
+              "samples": 31,
+              "p50_us": 10363.817,
+              "p95_us": 10807.748
+            }
+          },
+          "paired_parity": {
+            "compared_ranks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mismatches": {}
+          },
+          "workload": {
+            "source_rev": "0a9059c516f9b458f2b271d207a49ac80388763e",
+            "model_rev": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+            "model_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+            "prefill_chunk": 4096,
+            "output_tokens": 256,
+            "warmup_steps": 12,
+            "clean_steps": 32,
+            "ep": 4,
+            "dp": 4,
+            "cp": 1,
+            "nextn": 3,
+            "gpu_memory_utilization": 0.9,
+            "context": 8192,
+            "requests_per_rank": 8,
+            "variant": "base",
+            "max_model_len": 135168,
+            "engine_max_num_seqs": 8
+          },
+          "runtime": {
+            "gpu": "NVIDIA B300 SXM6 AC",
+            "torch": "2.13.0+cu132",
+            "cuda": "13.2",
+            "nccl": [
+              2,
+              29,
+              7
+            ],
+            "cache_block_size": 128,
+            "graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              24,
+              32
+            ],
+            "draft_graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "engram_shard_bytes": 50689537536
+          }
+        },
+        "fused": {
+          "status": "matched",
+          "valid_ranks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank_errors": {},
+          "timings": {
+            "engine_call": {
+              "samples": 32,
+              "p50_us": 10107.713500000002,
+              "p95_us": 10322.296
+            },
+            "step_start_interval": {
+              "samples": 31,
+              "p50_us": 10173.305,
+              "p95_us": 10353.269
+            }
+          },
+          "paired_parity": {
+            "compared_ranks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mismatches": {}
+          },
+          "workload": {
+            "source_rev": "0a9059c516f9b458f2b271d207a49ac80388763e",
+            "model_rev": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+            "model_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+            "prefill_chunk": 4096,
+            "output_tokens": 256,
+            "warmup_steps": 12,
+            "clean_steps": 32,
+            "ep": 4,
+            "dp": 4,
+            "cp": 1,
+            "nextn": 3,
+            "gpu_memory_utilization": 0.9,
+            "context": 8192,
+            "requests_per_rank": 8,
+            "variant": "fused",
+            "max_model_len": 135168,
+            "engine_max_num_seqs": 8
+          },
+          "runtime": {
+            "gpu": "NVIDIA B300 SXM6 AC",
+            "torch": "2.13.0+cu132",
+            "cuda": "13.2",
+            "nccl": [
+              2,
+              29,
+              7
+            ],
+            "cache_block_size": 128,
+            "graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              24,
+              32
+            ],
+            "draft_graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "engram_shard_bytes": 50689537536
+          }
+        },
+        "prefetch": {
+          "status": "matched",
+          "valid_ranks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank_errors": {},
+          "timings": {
+            "engine_call": {
+              "samples": 32,
+              "p50_us": 10285.844000000001,
+              "p95_us": 10460.952
+            },
+            "step_start_interval": {
+              "samples": 31,
+              "p50_us": 10346.508,
+              "p95_us": 10527.928
+            }
+          },
+          "paired_parity": {
+            "compared_ranks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mismatches": {}
+          },
+          "workload": {
+            "source_rev": "0a9059c516f9b458f2b271d207a49ac80388763e",
+            "model_rev": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+            "model_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+            "prefill_chunk": 4096,
+            "output_tokens": 256,
+            "warmup_steps": 12,
+            "clean_steps": 32,
+            "ep": 4,
+            "dp": 4,
+            "cp": 1,
+            "nextn": 3,
+            "gpu_memory_utilization": 0.9,
+            "context": 8192,
+            "requests_per_rank": 8,
+            "variant": "prefetch",
+            "max_model_len": 135168,
+            "engine_max_num_seqs": 8
+          },
+          "runtime": {
+            "gpu": "NVIDIA B300 SXM6 AC",
+            "torch": "2.13.0+cu132",
+            "cuda": "13.2",
+            "nccl": [
+              2,
+              29,
+              7
+            ],
+            "cache_block_size": 128,
+            "graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              24,
+              32
+            ],
+            "draft_graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "engram_shard_bytes": 50689537536
+          }
+        },
+        "fused_prefetch": {
+          "status": "matched",
+          "valid_ranks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank_errors": {},
+          "timings": {
+            "engine_call": {
+              "samples": 32,
+              "p50_us": 10139.972,
+              "p95_us": 10238.959
+            },
+            "step_start_interval": {
+              "samples": 31,
+              "p50_us": 10203.534,
+              "p95_us": 10324.452
+            }
+          },
+          "paired_parity": {
+            "compared_ranks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mismatches": {}
+          },
+          "workload": {
+            "source_rev": "0a9059c516f9b458f2b271d207a49ac80388763e",
+            "model_rev": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+            "model_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+            "prefill_chunk": 4096,
+            "output_tokens": 256,
+            "warmup_steps": 12,
+            "clean_steps": 32,
+            "ep": 4,
+            "dp": 4,
+            "cp": 1,
+            "nextn": 3,
+            "gpu_memory_utilization": 0.9,
+            "context": 8192,
+            "requests_per_rank": 8,
+            "variant": "fused_prefetch",
+            "max_model_len": 135168,
+            "engine_max_num_seqs": 8
+          },
+          "runtime": {
+            "gpu": "NVIDIA B300 SXM6 AC",
+            "torch": "2.13.0+cu132",
+            "cuda": "13.2",
+            "nccl": [
+              2,
+              29,
+              7
+            ],
+            "cache_block_size": 128,
+            "graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              24,
+              32
+            ],
+            "draft_graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "engram_shard_bytes": 50689537536
+          }
+        },
+        "base_repeat": {
+          "status": "matched",
+          "valid_ranks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rank_errors": {},
+          "timings": {
+            "engine_call": {
+              "samples": 32,
+              "p50_us": 10312.287,
+              "p95_us": 10746.665
+            },
+            "step_start_interval": {
+              "samples": 31,
+              "p50_us": 10362.759,
+              "p95_us": 10657.008
+            }
+          },
+          "paired_parity": {
+            "compared_ranks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mismatches": {}
+          },
+          "workload": {
+            "source_rev": "0a9059c516f9b458f2b271d207a49ac80388763e",
+            "model_rev": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+            "model_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+            "prefill_chunk": 4096,
+            "output_tokens": 256,
+            "warmup_steps": 12,
+            "clean_steps": 32,
+            "ep": 4,
+            "dp": 4,
+            "cp": 1,
+            "nextn": 3,
+            "gpu_memory_utilization": 0.9,
+            "context": 8192,
+            "requests_per_rank": 8,
+            "variant": "base_repeat",
+            "max_model_len": 135168,
+            "engine_max_num_seqs": 8
+          },
+          "runtime": {
+            "gpu": "NVIDIA B300 SXM6 AC",
+            "torch": "2.13.0+cu132",
+            "cuda": "13.2",
+            "nccl": [
+              2,
+              29,
+              7
+            ],
+            "cache_block_size": 128,
+            "graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              24,
+              32
+            ],
+            "draft_graph_batch_sizes": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "engram_shard_bytes": 50689537536
+          }
+        }
+      },
+      "contrasts": {
+        "fused_vs_base": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 10295.568,
+                "variant_us": 10107.713500000002,
+                "reduction_us": 187.85449999999764,
+                "reduction_pct": 1.8246152130703004,
+                "speedup": 1.0185852616420121
+              },
+              "p95_us": {
+                "reference_us": 10729.003,
+                "variant_us": 10322.296,
+                "reduction_us": 406.70700000000033,
+                "reduction_pct": 3.7907250095838383,
+                "speedup": 1.0394008271028075
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 10363.817,
+                "variant_us": 10173.305,
+                "reduction_us": 190.5119999999988,
+                "reduction_pct": 1.8382416439811589,
+                "speedup": 1.0187266576594332
+              },
+              "p95_us": {
+                "reference_us": 10807.748,
+                "variant_us": 10353.269,
+                "reduction_us": 454.47899999999936,
+                "reduction_pct": 4.205122103143036,
+                "speedup": 1.043897149779456
+              }
+            }
+          }
+        },
+        "prefetch_vs_base": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 10295.568,
+                "variant_us": 10285.844000000001,
+                "reduction_us": 9.723999999998341,
+                "reduction_pct": 0.09444840731466532,
+                "speedup": 1.0009453769666348
+              },
+              "p95_us": {
+                "reference_us": 10729.003,
+                "variant_us": 10460.952,
+                "reduction_us": 268.0510000000013,
+                "reduction_pct": 2.4983775286482937,
+                "speedup": 1.0256239585077918
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 10363.817,
+                "variant_us": 10346.508,
+                "reduction_us": 17.308999999999287,
+                "reduction_pct": 0.16701375564619955,
+                "speedup": 1.001672931582327
+              },
+              "p95_us": {
+                "reference_us": 10807.748,
+                "variant_us": 10527.928,
+                "reduction_us": 279.8199999999997,
+                "reduction_pct": 2.589068508999282,
+                "speedup": 1.0265788291865217
+              }
+            }
+          }
+        },
+        "fused_prefetch_vs_base": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 10295.568,
+                "variant_us": 10139.972,
+                "reduction_us": 155.59599999999955,
+                "reduction_pct": 1.5112910720418684,
+                "speedup": 1.0153448155478142
+              },
+              "p95_us": {
+                "reference_us": 10729.003,
+                "variant_us": 10238.959,
+                "reduction_us": 490.04399999999987,
+                "reduction_pct": 4.567470062222928,
+                "speedup": 1.047860724903772
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 10363.817,
+                "variant_us": 10203.534,
+                "reduction_us": 160.28299999999945,
+                "reduction_pct": 1.5465633945485477,
+                "speedup": 1.015708577047913
+              },
+              "p95_us": {
+                "reference_us": 10807.748,
+                "variant_us": 10324.452,
+                "reduction_us": 483.2960000000003,
+                "reduction_pct": 4.471754892878704,
+                "speedup": 1.046810813784596
+              }
+            }
+          }
+        },
+        "fused_prefetch_vs_fused": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 10107.713500000002,
+                "variant_us": 10139.972,
+                "reduction_us": -32.258499999998094,
+                "reduction_pct": -0.3191473521682039,
+                "speedup": 0.9968186795782081
+              },
+              "p95_us": {
+                "reference_us": 10322.296,
+                "variant_us": 10238.959,
+                "reduction_us": 83.33699999999953,
+                "reduction_pct": 0.8073494501610836,
+                "speedup": 1.0081392063392383
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 10173.305,
+                "variant_us": 10203.534,
+                "reduction_us": -30.22899999999936,
+                "reduction_pct": -0.29714040815643844,
+                "speedup": 0.9970373990031297
+              },
+              "p95_us": {
+                "reference_us": 10353.269,
+                "variant_us": 10324.452,
+                "reduction_us": 28.817000000000917,
+                "reduction_pct": 0.27833720924280936,
+                "speedup": 1.0027911408760486
+              }
+            }
+          }
+        },
+        "fused_prefetch_vs_prefetch": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 10285.844000000001,
+                "variant_us": 10139.972,
+                "reduction_us": 145.8720000000012,
+                "reduction_pct": 1.4181821151477816,
+                "speedup": 1.0143858385407771
+              },
+              "p95_us": {
+                "reference_us": 10460.952,
+                "variant_us": 10238.959,
+                "reduction_us": 221.99299999999857,
+                "reduction_pct": 2.1221108748037327,
+                "speedup": 1.021681208021245
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 10346.508,
+                "variant_us": 10203.534,
+                "reduction_us": 142.97400000000016,
+                "reduction_pct": 1.3818575310626557,
+                "speedup": 1.0140122040069646
+              },
+              "p95_us": {
+                "reference_us": 10527.928,
+                "variant_us": 10324.452,
+                "reduction_us": 203.47600000000057,
+                "reduction_pct": 1.9327259836883437,
+                "speedup": 1.0197081646561
+              }
+            }
+          }
+        },
+        "base_repeat_vs_base": {
+          "status": "matched",
+          "timings": {
+            "engine_call": {
+              "p50_us": {
+                "reference_us": 10295.568,
+                "variant_us": 10312.287,
+                "reduction_us": -16.71900000000096,
+                "reduction_pct": -0.1623902634609471,
+                "speedup": 0.9983787301497717
+              },
+              "p95_us": {
+                "reference_us": 10729.003,
+                "variant_us": 10746.665,
+                "reduction_us": -17.662000000000262,
+                "reduction_pct": -0.1646192101912942,
+                "speedup": 0.9983565133927595
+              }
+            },
+            "step_start_interval": {
+              "p50_us": {
+                "reference_us": 10363.817,
+                "variant_us": 10362.759,
+                "reduction_us": 1.0579999999990832,
+                "reduction_pct": 0.01020859399581335,
+                "speedup": 1.0001020963625613
+              },
+              "p95_us": {
+                "reference_us": 10807.748,
+                "variant_us": 10657.008,
+                "reduction_us": 150.73999999999978,
+                "reduction_pct": 1.3947401438301466,
+                "speedup": 1.014144683010466
+              }
+            }
+          }
+        }
+      },
+      "factorial_effects": {
+        "status": "matched",
+        "timings": {
+          "engine_call": {
+            "p50_us": {
+              "fused_mean_reduction_us": 166.86324999999943,
+              "prefetch_mean_reduction_us": -11.267249999999876,
+              "interaction_reduction_us": -41.982499999996435
+            },
+            "p95_us": {
+              "fused_mean_reduction_us": 314.34999999999945,
+              "prefetch_mean_reduction_us": 175.69400000000041,
+              "interaction_reduction_us": -184.71400000000176
+            }
+          },
+          "step_start_interval": {
+            "p50_us": {
+              "fused_mean_reduction_us": 166.74299999999948,
+              "prefetch_mean_reduction_us": -6.460000000000036,
+              "interaction_reduction_us": -47.53799999999865
+            },
+            "p95_us": {
+              "fused_mean_reduction_us": 328.97749999999996,
+              "prefetch_mean_reduction_us": 154.3185000000003,
+              "interaction_reduction_us": -251.0029999999988
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "rank_errors": {},
+    "byte_parity": {
+      "fused": {
+        "status": "passed",
+        "checks_by_rank": {
+          "0": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          },
+          "1": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          },
+          "2": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          },
+          "3": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          }
+        }
+      },
+      "prefetch": {
+        "status": "passed",
+        "checks_by_rank": {
+          "0": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          },
+          "1": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          },
+          "2": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          },
+          "3": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          }
+        }
+      },
+      "fused_prefetch": {
+        "status": "passed",
+        "checks_by_rank": {
+          "0": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          },
+          "1": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          },
+          "2": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          },
+          "3": {
+            "q4-aligned0": true,
+            "q4-aligned1": true,
+            "q5-aligned0": true,
+            "q5-aligned1": true,
+            "q32-aligned0": true,
+            "q32-aligned1": true
+          }
+        }
+      }
+    },
+    "isolated_graph": {
+      "4": {
+        "status": "passed",
+        "statistics_by_rank": {
+          "0": {
+            "base": {
+              "samples": 12,
+              "p50_us": 143.2954967021942,
+              "p95_us": 143.5299962759018
+            },
+            "fused": {
+              "samples": 12,
+              "p50_us": 16.348499804735184,
+              "p95_us": 16.428999602794647
+            }
+          },
+          "1": {
+            "base": {
+              "samples": 12,
+              "p50_us": 145.78299969434738,
+              "p95_us": 145.98099887371063
+            },
+            "fused": {
+              "samples": 12,
+              "p50_us": 16.355999745428562,
+              "p95_us": 16.43900014460087
+            }
+          },
+          "2": {
+            "base": {
+              "samples": 12,
+              "p50_us": 143.23800057172775,
+              "p95_us": 143.32400262355804
+            },
+            "fused": {
+              "samples": 12,
+              "p50_us": 16.361000016331673,
+              "p95_us": 16.436999663710594
+            }
+          },
+          "3": {
+            "base": {
+              "samples": 12,
+              "p50_us": 156.58850222826004,
+              "p95_us": 156.86799585819244
+            },
+            "fused": {
+              "samples": 12,
+              "p50_us": 16.34950004518032,
+              "p95_us": 16.513999551534653
+            }
+          }
+        },
+        "worst_rank_comparison": {
+          "p50_us": {
+            "reference_us": 156.58850222826004,
+            "variant_us": 16.361000016331673,
+            "reduction_us": 140.22750221192837,
+            "reduction_pct": 89.55159556192565,
+            "speedup": 9.570839317398217
+          },
+          "p95_us": {
+            "reference_us": 156.86799585819244,
+            "variant_us": 16.513999551534653,
+            "reduction_us": 140.3539963066578,
+            "reduction_pct": 89.47267767323095,
+            "speedup": 9.499091686944768
+          }
+        }
+      },
+      "32": {
+        "status": "passed",
+        "statistics_by_rank": {
+          "0": {
+            "base": {
+              "samples": 12,
+              "p50_us": 225.17650574445724,
+              "p95_us": 225.29199719429016
+            },
+            "fused": {
+              "samples": 12,
+              "p50_us": 16.363000497221947,
+              "p95_us": 16.489999368786812
+            }
+          },
+          "1": {
+            "base": {
+              "samples": 12,
+              "p50_us": 228.984996676445,
+              "p95_us": 229.0779948234558
+            },
+            "fused": {
+              "samples": 12,
+              "p50_us": 16.37350022792816,
+              "p95_us": 16.454000025987625
+            }
+          },
+          "2": {
+            "base": {
+              "samples": 12,
+              "p50_us": 225.18450021743774,
+              "p95_us": 225.27000308036804
+            },
+            "fused": {
+              "samples": 12,
+              "p50_us": 16.382500529289246,
+              "p95_us": 16.596000641584396
+            }
+          },
+          "3": {
+            "base": {
+              "samples": 12,
+              "p50_us": 247.95550107955933,
+              "p95_us": 248.15699458122253
+            },
+            "fused": {
+              "samples": 12,
+              "p50_us": 16.374499537050724,
+              "p95_us": 16.440000385046005
+            }
+          }
+        },
+        "worst_rank_comparison": {
+          "p50_us": {
+            "reference_us": 247.95550107955933,
+            "variant_us": 16.382500529289246,
+            "reduction_us": 231.57300055027008,
+            "reduction_pct": 93.39296750507151,
+            "speedup": 15.135387948637952
+          },
+          "p95_us": {
+            "reference_us": 248.15699458122253,
+            "variant_us": 16.596000641584396,
+            "reduction_us": 231.56099393963814,
+            "reduction_pct": 93.31229785822036,
+            "speedup": 14.952819052044298
+          }
+        }
+      }
+    }
+  },
+  "measurement": "Clean latency uses the maximum across four ranks at each step ordinal. The median and empirical nearest-rank p95 summarize those samples. The base_repeat_vs_base contrast measures drift in the fixed run order. Positive reductions favor the variant. A positive factorial interaction means the combined reduction exceeds the sum of the individual reductions at that percentile. Isolated samples are averages of 32 graph replays; their worst-rank percentiles summarize independent rank series. These are descriptive comparisons."
+}

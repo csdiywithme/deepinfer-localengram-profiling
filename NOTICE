@@ -1,0 +1,10 @@
+This project profiles the LocalEngramBuffer implementation in DeepInfer PR #246
+(https://github.com/deepseek-ai/DeepInfer/pull/246), submitted by wukehu and
+credited in its source to the Intellifusion Cluster Inference Team.
+
+DeepInfer is distributed by its authors under the Apache License, Version 2.0.
+See its license at the pinned revision:
+https://github.com/deepseek-ai/DeepInfer/blob/0a9059c516f9b458f2b271d207a49ac80388763e/LICENSE
+
+The DeepInfer checkout, vendor dependencies, and model weights are obtained
+separately and remain subject to their respective upstream terms.
